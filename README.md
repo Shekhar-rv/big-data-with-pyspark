@@ -1,5 +1,4 @@
-# big_data_with_pyspark
-Spark and Python for Big Data with PySpark
+# Spark and Python for Big Data with PySpark
 
 Learn how to use Spark with Python, including Spark Streaming, Machine Learning, Spark 2.0 DataFrames and more! The course explores 4 different approaches to setting up spark, but I chose a different one that utilises a docker container with Jupyter Lab with Spark.
 
