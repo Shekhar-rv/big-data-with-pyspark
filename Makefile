@@ -7,7 +7,7 @@ UNDERLINE=\033[4m
 
 help:
 	@echo ""
-	@echo "${UNDERLINE} Development Environment (vscode): ${NONE}"\
+	@echo "${UNDERLINE} Development Environment (vscode): ${NONE}"
 	@echo " ${BOLD} docker-build : ${GREEN} Builds the Docker Image${NONE}"
 	@echo " ${BOLD} docker-run : ${GREEN} Runs the Docker Image${NONE}"
 	@echo " ${BOLD} run-notebook : ${GREEN} Builds and Runs the Docker Image${NONE}"
