@@ -35,8 +35,11 @@ docker -> pyspark_notebook -> work
 ```
 And if you are copying data files such as xlsx or csv, copy it into the the data directory within the above mentioned directory.
 
-### Note: Make sure you pull before you run the make command to build and run the docker container and also be sure to rerun the command if you copied over any local files as it needs to be copied over when the container is build.
+### Note: 
+1. Make sure you pull before you run the make command to build and run the docker container and also be sure to rerun the command if you copied over any local files as it needs to be copied over when the container is build.
 
-### Note: Please save the notebook in Jupyter Lab and shutdown the kernel so that the latest changes are saved and please push them to git repo once done.
+2. Please save the notebook in Jupyter Lab and shutdown the kernel so that the latest changes are saved and please push them to git repo once done.
+
+3. Note: If you need to install any new packages, you should add the name of the package along with the required version number to the requirements.txt file before you build and run the container.
 
 # Happy Learning :)
