@@ -20,7 +20,7 @@ docker-build:
 	docker build --no-cache -f ${ROOT_DIR}/docker/pyspark_notebook/Dockerfile . -t pyspark_notebook
 
 docker-run:
-	docker run -p 8888:8888 -e NB_USER="sheikh" -e CHOWN_HOME=yes -v "${ROOT_DIR}/docker/pyspark_notebook/app":/home/jovyan/work pyspark_notebook /bin/bash -c "/usr/local/bin/start-notebook.sh"
+	docker run -p 8888:8888 -e NB_USER="sheikh" -e CHOWN_HOME=yes -v "${ROOT_DIR}/docker/pyspark_notebook/work":/home/jovyan/work pyspark_notebook /bin/bash -c "/usr/local/bin/start-notebook.sh"
 
 run-notebook: docker-build docker-run
 	@echo "Starting the Jupyter Notebook Service ..."
